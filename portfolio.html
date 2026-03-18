@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amii.in</title>
+    <link rel="stylesheet" href="potfolio.css">
+    <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="preconnect" href="https://fontawesome.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="name">Amina Raheem</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Tools & Tech</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="first-span">
+                <div id="image"><img src="my_image.jpeg"></div>
+                <div class="social-links" style="margin-bottom: 20px; text-align: center;">
+                    <a href="https://www.linkedin.com/in/amina-raheem-amiizx" target="_blank"
+                        style="color: #00ff00; font-size: 24px; margin: 0 10px; text-decoration: none;"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Amina-Raheem" target="_blank"
+                        style="color: #00ff00; font-size: 24px; margin: 0 10px; text-decoration: none;"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:raheemamina0@gmail.com"
+                        style="color: #00ff00; font-size: 24px; margin: 0 10px; text-decoration: none;"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="my_cv.pdf" download
+                        style="display: inline-block; margin-left: 20px; padding: 5px 15px; font-family: 'Iceberg'; font-size: 16px; background-color: transparent; color: #00ff00; border: 1px solid #00ff00; border-radius: 5px; text-decoration: none; vertical-align: middle;">Download
+                        CV</a>
+                </div>
+                <div id="text">
+                    <h5>Amina Raheem , a cybersecurity student <br> focusing on offensive security
+                        and a passionate learner
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <div class="second-span">
+                <h2><u>About Me</u></h2>
+                <p>With a keen interest in technology , I start building my foundation and exploring various
+                    technologies
+                    since my first year in college.
+                    The evoloving nature of technology has always amazed me especially in the field of cybersecuirty.
+                    I am a quick learner and a team player with a strong dedication to my work.
+
+                </p>
+                <div id="journey-text" style="display: none; margin-top: 15px;">
+                    <h3 style="margin-bottom: 10px; font-family: 'Iceberg';">The spark that paved my Journey</h3>
+                    <p>
+                        I first found myself drawn to AI while in my 11th and 12th grade even though I was someone
+                        pursuing
+                        Biology.
+                        But then I had a terrific experience in which I would have been safe if I had the right
+                        knowledge
+                        about nowing what to share
+                        and what not to share online The awareness every teenager should be given but something that is
+                        still being ignored to talk about.
+                        Then and there I decided I would learn and make myself be in a position where I can give
+                        awareness
+                        to others specifically teenagers on
+                        how to be digitally safe and secure.
+                        I believe cybersecurity is not just abiut the technological aspect of it but more about
+                        awareness
+                        and responsibility.
+                    </p>
+                </div>
+                <button id="journey-btn" onclick="toggleJourney()"
+                    style="margin-top: 10px; padding: 5px 15px; font-family: 'Iceberg'; font-size: 16px; background-color: transparent; color: #00ff00; border: 1px solid #00ff00; border-radius: 5px; cursor: pointer;">More
+                    on my Journey</button>
+            </div>
+        </section>
+
+        <script>
+            function toggleJourney() {
+                var moreText = document.getElementById("journey-text");
+                var btnText = document.getElementById("journey-btn");
+
+                if (moreText.style.display === "none" || moreText.style.display === "") {
+                    moreText.style.display = "block";
+                    btnText.innerHTML = "Read Less";
+                } else {
+                    moreText.style.display = "none";
+                    btnText.innerHTML = "More on my Journey";
+                }
+            }
+        </script>
+        </section>
+
+        <section class="third">
+            <h2><u>Education</u></h2>
+            <div class="third-span">
+
+                <span class="education-item">
+                    <div class="education-header">
+                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                        <span class="education-year">2023 - 2027</span>
+                    </div>
+                    <p class="education-institution">Lovely Professional University</p>
+                    <p class="education-details">
+                        Specializing in Cybersecurity
+                    </p>
+                </span>
+                <span class="education-item">
+                    <div class="education-header">
+                        <h3>Higher Secondary</h3>
+                        <span class="education-year">2020 - 2022</span>
+                    </div>
+                    <p class="education-institution">St Mary's M.M.G.H.S.S , Adoor</p>
+                    <p class="education-details">
+                        Stream: Mathematics (Physics, Chemistry, Biology)
+                    </p>
+                </span>
+                <span class="education-item">
+                    <div class="education-header">
+                        <h3>Secondary</h3>
+                        <span class="education-year">2018 - 2020</span>
+                    </div>
+                    <p class="education-institution">C.B.M.H.S.S , Nooranad</p>
+
+                </span>
+            </div>
+        </section>
+        <section class="fourth">
+            <div class="fourth-span">
+                <h2><u>Tools & Tech</u></h2>
+
+                <div class="circles-wrapper">
+                    <div class="circle-category">
+                        <h6 class="circle-center">Tools</h6>
+                        <div class="circle-items" data-count="7">
+                            <div class="skill-item"><span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Nessus</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Wireshark</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">VS Code</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">WSL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="circle-category">
+                        <h6 class="circle-center">Tech</h6>
+                        <div class="circle-items" data-count="9">
+                            <div class="skill-item"><span class="skill-name">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">JS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Bootstrap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Flask</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">DSA</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="circle-category">
+                        <h6 class="circle-center">OS</h6>
+                        <div class="circle-items" data-count="2">
+                            <div class="skill-item"><span class="skill-name">Windows</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span class="skill-name">Linux</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth">
+            <div class="fifth-span">
+                <h2><u>Projects</u></h2>
+                <div class="projects-wrapper">
+                    <h5>1. Mini SIEM: Security Log Monitoring System</h5>
+                    <h6>Description:</h6>
+                    <p>A simplified Security Information and Event Management (SIEM) system that collects logs from
+                        multiple sources, analyzes them, and detects suspicious activity. The platform ingests logs
+                        (system logs, authentication logs, network logs), stores them in a database, and provides a web
+                        dashboard to visualize alerts and security events</p>
+                    <h6>Features:</h6>
+                    <ul>
+                        <li>Log Collection: Collects logs from multiple sources (system logs, authentication logs,
+                            network logs)</li>
+                        <li>Log Storage: Stores logs in a database</li>
+                        <li>Log Analysis: Analyzes logs to detect suspicious activity</li>
+                        <li>Alerting: Provides alerts for suspicious activity</li>
+                        <li>Dashboard: Web dashboard to visualize alerts and security events</li>
+                    </ul>
+                    <h6>Tech Stack:</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>SQL</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="projects-wrapper">
+                    <h5>2.Threat Intelligence Lookup Platform</h5>
+                    <h6>Description:</h6>
+                    <p>A web application that allows analysts to check IP addresses, domains, or file hashes against
+                        threat intelligence sources. The platform aggregates threat data and presents a risk score along
+                        with contextual information.
+                    <h6>Features:</h6>
+                    </p>
+                    <h6>Features:</h6>
+                    <ul>
+                        <li>IP/Domain/File Hash Lookup: Check IP addresses, domains, or file hashes against threat
+                            intelligence sources</li>
+                        <li>Threat Aggregation: Aggregates threat data from multiple sources</li>
+                        <li>Risk Scoring: Presents a risk score along with contextual information</li>
+                        <li>Dashboard: Web dashboard to visualize threat data</li>
+                    </ul>
+                    <h6>Tech Stack:</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="sixth">
+            <div class="sixth-span">
+                <h2><u>Certifications</u></h2>
+                <div class="certifications-container">
+                    <div class="cert-item">
+                        <a href="https://coursera.org/share/ef3c8a6ab8d5fbca9ce576797645f376" target="_blank"
+                            class="cert-link">
+                            <img src="Coursera_page_1.png" alt="Certification 1">
+                            <h4>Foundations of Cybersecurity</h4>
+                        </a>
+                        <p>A foundational course that introduces core cybersecurity concepts including threats,
+                            vulnerabilities, risk management, and basic defense strategies.</p>
+                    </div>
+
+                    <div class="cert-item">
+                        <a href="https://elearning.securityblue.team/home/certificate/237976166" target="_blank"
+                            class="cert-link">
+                            <img src="Introduction_to_Vulnerability_Management-course_page_1.png" alt="Certification 2">
+                            <h4>Introduction to Vulnerability Management</h4>
+                        </a>
+                        <p>An entry-level course that teaches the fundamentals of vulnerability management through
+                            hands-on practice with tools like Nessus and Metasploitable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="seven">
+            <div class="footer-contacts">
+                <h2>Connect with me</h2>
+                <p>Feel free to reach out to me for any collaborations, or just a friendly chat!</p>
+                <div class="contact-form-container">
+                    <!-- Formspree is used as a simple way to reliably send this data to an email/database -->
+                    <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2026 Amina Raheem. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

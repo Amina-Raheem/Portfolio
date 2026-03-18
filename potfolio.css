@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Iceberg&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000000 80%);
+    background-color: #000000;
+    background-image:
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 60%),
+        linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+nav ul {
+    display: flex;
+    /* Corrected from flex-box */
+    flex-direction: row;
+    list-style-type: none;
+    /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px 30px;
+    /* Reduced vertical padding */
+    font-weight: 200;
+    /* Adjusted from 20 to a valid font-weight */
+    font-size: 20px;
+    line-height: 2;
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Iceberg', cursive;
+}
+
+header #name {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 300px;
+    padding-top: 15px;
+    /* Reduced padding */
+    padding-bottom: 15px;
+    /* Reduced padding */
+    font-size: 30px;
+    font-weight: 100;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    /* Reduced padding */
+    padding-bottom: 15px;
+    /* Reduced padding */
+}
+
+.first {
+    padding: 10px 40px 0px 40px;
+    /* Reduced bottom padding */
+    display: flex;
+    justify-content: center;
+}
+
+.first h5 {
+    font-size: 20px;
+    font-family: 'Codystar', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    /* Adding this just in case h6 default margins push things around */
+}
+
+.first-span {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    color: white;
+    /* Center text inside the box */
+}
+
+section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    /* Remove padding-left to center horizontally */
+    display: block;
+    margin: 0 auto 5px auto;
+    /* Reduced bottom margin */
+}
+
+.second {
+    padding: 0px 40px 10px 40px;
+    /* Create a dark background with a neon green grid pattern and a subtle white glow in the center */
+    justify-content: center;
+    color: bisque;
+}
+
+.second-span {
+    text-align: left;
+    padding-left: 200px;
+    /* Increased side padding */
+    padding-right: 200px;
+    /* Increased side padding */
+    padding-top: 40px;
+    /* Increased top padding to push it down */
+    padding-bottom: 10px;
+    font-family: 'Iceberg';
+    font-size: 20px;
+}
+
+.third {
+    padding: 0px 40px 10px 40px;
+    justify-content: center;
+    color: bisque;
+}
+
+.third h2 {
+    text-align: center;
+    font-family: 'Iceberg';
+    font-size: 30px;
+
+}
+
+.third-span {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Iceberg';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-item {
+    display: block;
+    flex: 1 1 0;
+    border-left: 2px solid #00ff00;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    background: rgba(0, 255, 0, 0.05);
+    /* very faint green background to make it pop like a digital terminal */
+    padding: 15px 15px 15px 20px;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    height: auto;
+    overflow: visible;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-header h3 {
+    margin: 0;
+    color: #00ff00;
+    /* Digital green for headers */
+    font-size: 22px;
+}
+
+.education-year {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.education-institution {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.education-details {
+    margin: 0;
+    color: #aaa;
+}
+
+.fourth {
+    padding: 0px 40px 10px 40px;
+    justify-content: center;
+    color: bisque;
+}
+
+.fourth-span {
+
+    /* Center the whole section */
+    padding-left: 20px;
+    /* Reduced from 200px to give circles room */
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Iceberg';
+    font-size: 20px;
+}
+
+.fourth-span h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.fourth-span h6 {
+    font-family: 'Iceberg';
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: #00ff00;
+    text-align: left;
+    /* Digital green */
+}
+
+.circles-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 150px;
+    row-gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.circle-category {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 1px dashed rgba(0, 255, 0, 0.3);
+    /* faint outer ring */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Force Tools (first circle) to span full width and center itself */
+.circle-category:nth-of-type(1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.circle-center {
+    position: absolute;
+    font-size: 24px;
+    color: #00ff00;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.circle-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    position: absolute;
+    width: 100px;
+    /* Restrict width to keep them tidy on the ring */
+    text-align: center;
+    /* Center the origin so they orbit nicely */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill-name {
+    font-family: 'Iceberg';
+    font-size: 14px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    /* readable background */
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    /* slightly thinner to fit circular design */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    /* Optional glowing border */
+    border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, #004d00, #00ff00);
+    border-radius: 5px;
+    /* Add a glowing effect to the bar itself */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    transition: width 5s ease-in-out;
+}
+
+/* CSS variables for trig-based radial positioning */
+.circle-category:nth-of-type(1) .skill-item:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(51.4deg) translate(200px) rotate(-51.4deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(102.8deg) translate(200px) rotate(-102.8deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(154.2deg) translate(200px) rotate(-154.2deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(205.6deg) translate(200px) rotate(-205.6deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(257deg) translate(200px) rotate(-257deg);
+}
+
+.circle-category:nth-of-type(1) .skill-item:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(308.4deg) translate(200px) rotate(-308.4deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(40deg) translate(200px) rotate(-40deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(80deg) translate(200px) rotate(-80deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(120deg) translate(200px) rotate(-120deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(160deg) translate(200px) rotate(-160deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(200deg) translate(200px) rotate(-200deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(240deg) translate(200px) rotate(-240deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(280deg) translate(200px) rotate(-280deg);
+}
+
+.circle-category:nth-of-type(2) .skill-item:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(320deg) translate(200px) rotate(-320deg);
+}
+
+.circle-category:nth-of-type(3) .skill-item:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.circle-category:nth-of-type(3) .skill-item:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(180deg) translate(200px) rotate(-180deg);
+}
+
+
+.fifth {
+    padding: 0px 40px 10px 40px;
+    justify-content: center;
+    color: bisque;
+}
+
+.fifth-span {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Iceberg';
+    font-size: 20px;
+}
+
+.fifth-span h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.projects-wrapper {
+    background: rgba(0, 255, 0, 0.05);
+    border-left: 2px solid #00ff00;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 5px 5px 0;
+}
+
+.projects-wrapper h5 {
+    font-size: 24px;
+    color: #00ff00;
+    margin: 0 0 15px 0;
+}
+
+.projects-wrapper h6 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 5px 0;
+}
+
+.projects-wrapper p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.projects-wrapper ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.projects-wrapper ul li {
+    margin-bottom: 5px;
+}
+
+.sixth {
+    padding: 20px 40px 50px 40px;
+    justify-content: center;
+    color: bisque;
+}
+
+.sixth-span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sixth h2 {
+    text-align: center;
+    font-family: 'Iceberg';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'Iceberg';
+}
+
+.cert-item {
+    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+}
+
+.cert-link {
+    text-decoration: none;
+    color: #00ff00;
+    display: block;
+}
+
+.cert-link:hover h4 {
+    text-shadow: 0 0 8px #00ff00;
+}
+
+section.sixth img {
+    height: 100px;
+    width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    box-shadow: none;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.cert-item h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cert-item p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Footer & Contact Form Styles */
+footer {
+    background-color: #050505;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    font-family: 'Iceberg', cursive;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.seven {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-contacts h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-contacts p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+.contact-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Iceberg', cursive;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    font-family: 'Iceberg', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    align-self: center; /* Center the button */
+    min-width: 200px;
+}
+
+.contact-form button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+    color: #777;
+}
+
+/* Scroll Reveal Animations */
+.scroll-hide {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.scroll-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    /* Header & Navigation */
+    header {
+        padding: 10px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    header #name {
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header a {
+        padding: 5px;
+        display: block;
+    }
+
+    /* Adjust container paddings for mobile */
+    .first, .second, .third, .fourth, .fifth, .sixth {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .second-span {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Stack Education and Certifications cards on mobile */
+    .third-span {
+        flex-direction: column;
+    }
+    
+    .education-item {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cert-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .projects-wrapper {
+        padding: 15px;
+    }
+
+    /* Make the circular tools layout responsive */
+    .circles-wrapper {
+        grid-template-columns: 1fr; /* Stack them in a single column */
+        column-gap: 0;
+        row-gap: 150px; /* Space them out vertically so the large rings dont overlap too much */
+        margin-top: 80px;
+        margin-bottom: 80px;
+        overflow-x: hidden;
+    }
+
+    /* Use CSS scale transform to universally shrink the circles and their orbiting elements */
+    .circle-category {
+        transform: scale(0.55);
+        margin: -40px auto; 
+    }
+    
+    .contact-form-container {
+        padding: 0 15px;
+    }
+}
